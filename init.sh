@@ -1,12 +1,12 @@
 #!/bin/bash
 
-set -e
+rm */build.sh
+rm */CMakeLists.txt
 
 for dir in */; do
 	if [ -d "$dir" ]; then
-		if [ -e "${dir}build.sh" ]; then
-			rm "${dir}build.sh"
-		fi
-		# ln -s build.sh "${dir}build.sh"
+		echo "${dir}"
+		cp ./build.sh "${dir}build.sh"
+		cp ./CMakeLists.txt "${dir}CMakeLists.txt"
 	fi
 done
