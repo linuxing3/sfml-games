@@ -1,0 +1,14 @@
+*.exe
+*.o
+*.a
+*.so
+*.lib
+*.dll
+*.cmake
+*.tmp
+*.cache
+*.s
+*.i
+
+*/build
+build
